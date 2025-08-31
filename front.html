@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俳句（仮）</title>
+    <link rel="stylesheet" href="front.css">
+    <style>
+    </style>   
+    <script src="front.js"></script>
+</head>
+    <body>        
+            <div class="kinyu">
+                <textarea id="haikuText"class="haikuText" placeholder="ここに俳句を書いてください" style="width:120px; height:600px; border:none;"></textarea><br>
+                <button onclick="openModal()"class="button">見てもらう</button>
+            </div>
+  <!-- モーダル本体 -->
+        
+                <div id="modal">
+                    <div id="modalContent">
+                        <p id="commentText"></p>
+                        <button onclick="closeModal()">閉じる</button>
+                    </div>
+                 </div>
+
+            <div class="layer">
+                <div class="layer_in">
+                    <div class="ki">
+                        <img src="images/ki.png"alt=""width="500px"height="800px"onklick="showHaiku('夏木陰 隙間に見える 発光かな')">    
+                    </div>
+                    <div class="engawa">  
+                      <img src="images/engawa.png"alt=""width="1720px"onklick="showHaiku('スイカ食べ 冷たさよりも 水っぽく')">
+                    </div>
+                    <div class="background">
+                        <img src="images/background.png"alt=""width="900px"onklick="showHaiku('山越えて 何も変わらぬ 町ひとつ')">
+                    </div>
+                        <div class="hurinn">
+                        <img src="images/hurinn.png"id="hurinn"width="150px"onklick="showHaiku('風鈴や 音の届かぬ 裏の庭')">
+                    </div>
+                    <div class="kumo">
+                        <img src="images/kumo.jpg.png"alt=""width="550px"onklick="showHaiku('入道雲 真ん中だけが 崩れそう')">
+                    </div>
+                </div>
+                
+            </div>
+            
+        <div class="bubble">
+            <div class="large">おじいちゃん</div>
+            <div class="small">せっかく来たんだから付き合ってくれんか。
+            一句聞かせておくれ</div>
+        </div> 
+         
+    </body>
+</html>
